@@ -37,7 +37,7 @@ fun GameScreen(viewModel: GameViewModel = viewModel()) {
         Text("Lives left: ${state.lives}")
 
         if (state.isGameOver) {
-            Text(if (state.isWon) "🎉 You Won!" else "☠️ Game Over!")
+            Text(if (state.isWon) "You Won!" else "Game Over! The correct answer is:" + state.wordToGuess)
             Button(onClick = { viewModel.resetGame() }) {
                 Text("Play Again")
             }

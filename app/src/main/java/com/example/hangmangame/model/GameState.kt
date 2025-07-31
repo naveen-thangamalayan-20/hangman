@@ -1,7 +1,7 @@
 package com.example.hangman.model
 
 data class GameState(
-    val wordToGuess: String = "COMPOSE",
+    val wordToGuess: String,
     val correctGuesses: Set<Char> = emptySet(),
     val wrongGuesses: Set<Char> = emptySet(),
     val lives: Int = 6,
