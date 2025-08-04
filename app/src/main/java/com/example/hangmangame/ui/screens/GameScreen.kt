@@ -9,6 +9,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.hangman.viewmodel.GameViewModel
 import com.example.hangman.ui.components.Keyboard
+import com.example.hangmangame.ui.components.HangmanDrawing
 
 @Composable
 fun GameScreen(viewModel: GameViewModel = viewModel()) {
@@ -22,7 +23,7 @@ fun GameScreen(viewModel: GameViewModel = viewModel()) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text("Hangman", style = MaterialTheme.typography.headlineLarge)
-
+        HangmanDrawing(state.wrongGuesses.size)
         Row {
             state.wordToGuess.forEach { letter ->
                 Text(

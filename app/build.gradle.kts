@@ -76,7 +76,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion")
     implementation("androidx.activity:activity-compose:1.9.0")
     implementation("androidx.navigation:navigation-compose:2.7.7")
-
+    implementation("com.google.accompanist:accompanist-navigation-animation:0.34.0")
 
     // Jetpack Compose
     implementation("androidx.compose.ui:ui:$composeVersion")

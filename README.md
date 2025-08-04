@@ -13,4 +13,6 @@ This is classic Hangman word game built using Jetpack Compose and Android.
 - Android Navigation
 
 ## Screenshot
-![Alt text](./screenshots/screenshot1.png "Screenshot 1")
+
+[//]: # (![Alt text]&#40;./screenshots/screenshot1.png "Screenshot 1"&#41;)
+![Alt text](./screenshots/screen-grab.gif "Screenshot 1")
